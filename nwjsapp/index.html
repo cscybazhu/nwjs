@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello NW.js</title>
+   <script>
+   function Users(name,id){
+	this.name=name;
+	this.id=id;
+    } 
+   var users=new Users('cuishaoqi',1);
+    window.onload=function(){
+
+	var i=1;
+	var user=document.getElementById('user');
+	 if(localStorage.user){
+		user_name=JSON.parse(localStorage.user);
+        	user.value=user_name.name;      
+      }
+
+	document.getElementById('button').onclick=function(){
+		users.name=user.value;
+		users.id=i;
+		localStorage.user=JSON.stringify(users);
+	}
+}
+   </script>
+</head>
+  <body>
+    <h1>Hello NW.js</h1>
+    <input type=text id='user' value='' />
+    <button id='button'>SAVE</button>
+	<a href="http://www.baidu.com">baidu</a>
+  </body>
+</html>
