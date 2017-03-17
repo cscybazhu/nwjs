@@ -1,0 +1,190 @@
+@charset "utf-8";
+/*=====reset=====*/
+body,form{margin:0;
+}
+
+input{margin:0;}
+img{border:0;}
+ul,li,dl,dt,dd{
+	padding:0;
+	margin:0;
+	list-style:none;
+	}
+a{color:#229be0; text-decoration:none;}
+a:hover{color:#ff6000;}
+
+
+/*====公用文字输入框 ====*/
+.textInput{ background:url(/Public/images_Comba/textInputBg.gif) top repeat-x;border:1px solid #7eadd9; height:18px; line-height:18px; padding-left:3px; width:180px;}
+.textInput1{*width:187px;width:182px;}
+/*更新过的*/
+/*.textInputUpdate{border:1px solid #7bbf49;background:#fafee7 url(/Public/images_Comba/textInputBg.gif) 0 -50px repeat-x;}*/
+.textInputUpdate{border:1px solid #7bbf49;}
+/*当前正在输入的*/
+.textInputActive{border:2px solid #89d4ed;height:17px; line-height:17px;}
+/*点击时弹框的*/
+.textInputOptional{border:1px solid #517291;border-right-color:#acb9c5;border-bottom-color:#acb9c5;}
+/*不可编辑状态*/
+.textInputDisable{ background:url(/Public/images_Comba/textInputBg.gif) left -25px repeat-x;height:18px; line-height:18px;border:1px solid #a7c4de; color:#b2b2b2;width:180px;}
+
+/*====公用select输入框 ====*/
+.selectDiv{border:1px solid #7f9db9; background:#fff;width:187px; height:17px;height:19\9px;*height:19px; position:relative; top:1px; left:1px; z-index:999;}
+.selectInput{width:187px;width:189px\9; height:17px;height:20px\9;*height:21px;line-height:18px;line-height:normal\9; position:absolute\9;top:-1px\9;left:-1px\9;border:none;border:inherit\9;}
+/*更新过的*/
+.selectDivUpdate{border:2px solid #89d4ed; background:#fff;width:187px; height:16px;height:17\9px;*height:18px; position:relative; top:1px; left:1px; z-index:999;}
+.selectInputUpdate{width:189px; height:18px;height:19px\9;*height:20px;position:absolute;top:-1px;left:-1px;}
+/*当前正在输入的*/
+.selectDivActive{border:1px solid #7bbf49; background:#fff;width:187px; height:17px;height:19\9px;*height:19px; position:relative; top:1px; left:1px; z-index:999;}
+.selectInputActive{width:187px;width:189px\9; height:17px;height:20px\9;*height:21px;line-height:18px;line-height:normal\9; position:absolute\9;top:-1px\9;left:-1px\9;border:none;border:inherit\9;}
+
+/*========用户管理======*/
+.presentation{ background:url(/Public/images_Comba/presentation.png) left bottom no-repeat;padding-left:19px;}
+
+/*========公共样式======*/
+.borderNone{ border:none;}
+.borderBottom1{ border-bottom:1px solid #b7c8da;}
+.floatL{ float:left !important;}
+.width_42{ width:42px;}
+.width_60 {width: 60px}
+.width_420{width:420px;}
+.width_450{ width:460px;}
+.width_130{width:130px;}
+.width_606{width:606px;}
+.borderNone_r{border-right:0;}
+.text_red12{ color:#f00;}
+.text_69gray12{color:#afafaf;}
+.clear{ clear:both;font-size:0; line-height:0; display:block; width:100%; overflow:hidden;}
+/*========dialog======*/
+.dialog_topleft {
+	background:url(/Public/images_Comba/dialog/top_left.png) left top no-repeat;
+	width:11px;
+	height:29px;
+}
+.dialog_topbg {
+	background:url(/Public/images_Comba/dialog/top_bg.png) left top repeat-x;
+}
+.dialog_topright {
+	background:url(/Public/images_Comba/dialog/top_right.png) right top no-repeat;
+	width:11px;
+	height:29px;
+}
+.dialog_leftbg {
+	background:url(/Public/images_Comba/dialog/left_bg.png) left top repeat-y;
+	width:11px;
+}
+.dialog_rightbg {
+	background:url(/Public/images_Comba/dialog/right_bg.png) right top repeat-y;
+	width:11px;
+}
+.dialog_bottomleft {
+	background:url(/Public/images_Comba/dialog/bottom_left.png) left top no-repeat;
+	width:11px;
+	height:11px;
+	font-size:0;
+	line-height:1;
+}
+.dialog_bottombg {
+	background:url(/Public/images_Comba/dialog/bottom_bg.png) repeat-x;
+	font-size:0;
+	line-height:1;
+}
+.dialog_bottomright {
+	background:url(/Public/images_Comba/dialog/bottom_right.png) left top no-repeat;
+	width:11px;
+	height:11px;
+	font-size:0;
+	line-height:1;
+}
+.dialog_topbg .dialog_tit {
+	float:left;
+	font-weight:bold;
+	font-size:14px !important;
+	margin:8px 0 0 5px;
+}
+.dialog_topbg .dialog_close {
+	float:right;
+	margin-top:6px;
+}
+a.dialog_close_a{
+	display:block;
+	width:16px;
+	height:16px;
+	background:url(/Public/images_Comba/dialog/layer_close_link.png) no-repeat center;
+	outline:none;
+}
+a.dialog_close_a:hover {
+	display:block;
+	width:16px;
+	height:16px;
+	background:url(/Public/images_Comba/dialog/layer_close_hover.png) no-repeat center;
+	outline:none;
+	cursor: pointer;
+}
+.dialog_center {
+/*	padding:6px; */
+	background:#fff;
+	min-width:260px !important;
+	height:130 !important;
+}
+.dialog_center .question {
+	padding:10px 0px 10px 20px;
+}
+/*操作提示框*/
+.dialog_center.alert{
+	/*width:350px;*/
+	padding:0;
+	}
+.dialog_center.alert div b{
+	color:#000000; 
+	font-size:16px;
+	font-weight:bold;
+	}
+.dialog_center.alert p{
+	margin:0.6em 0 0.5em 0;
+	line-height:1.5em;
+	color:#555555;
+	}
+/*操作成功*/
+.dialog_center div.ok{ 
+    padding:16px; 
+	padding-top:45px;
+	padding-left:85px; 
+	height:65px;
+	background:url(/Public/images_Comba/dialog/alert_ok.png) 25px 40px no-repeat; 	
+	}
+/*出错（如：操作出错啦）*/
+.dialog_center div.error{ 
+    padding:16px; 
+	padding-top:45px;
+	padding-left:85px; 
+	/*height:65px;*/
+	background:url(/Public/images_Comba/dialog/alert_error.png) 25px 40px no-repeat; 
+	}
+/*提示（如：还没选择 等)*/
+.dialog_center div.cue{ 
+    padding:16px; 
+	padding-top:45px;
+	padding-left:85px; 
+	height:65px;
+	background:url(/Public/images_Comba/dialog/alert_cue.png) 25px 40px no-repeat; 
+	}
+/*询问（如：确定删除吗）*/
+.dialog_center div.question{
+	padding:16px; 
+	padding-top:45px;
+	padding-left:85px; 
+	height:65px; 
+	background:url(/Public/images_Comba/dialog/alert_question.png) 25px 40px no-repeat; 
+	}
+
+/*操作提示框底部*/
+.dialog_center div.bottomBtn{ 
+ 	background:url(/Public/images_Comba/dialog/bottomBtnBarBg.png) left bottom repeat-x; 
+	/* padding-right:35px; */
+	height:39px;
+	}
+
+.dialog_center div.bottomBtn input{
+	margin-top:7px; 
+	float:right;
+	}

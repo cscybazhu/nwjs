@@ -1,0 +1,205 @@
+@charset "UTF-8";
+#main_top {
+	height: 58px;
+	width: 100%;
+}
+/*=====header=====*/
+
+.header {
+	height: 67px;
+	background: url(/Public/images_Comba/headerBg.png) top left repeat-x;
+}
+.header .logo {
+	width: 430px;
+	background:url(/Public/images_Comba/logo.jpg) left top no-repeat; 
+	font-size: 18px;
+	font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
+	text-indent: 200px;
+	color:#fff;
+	vertical-align:top; 
+	padding-top:20px;
+}
+.header .rightBox {
+	width: 575px;
+	background: url(/Public/images_Comba/headerRight_bg.jpg) right top no-repeat;
+	padding: 2px 16px 0 0;
+}
+
+/*=====left=====*/
+.leftBox{
+	background:#5ca0e7;
+	border:0;
+	height:100%;
+	overflow: auto;
+	color:#f6ff00;
+	position: relative;
+	}
+.leftBox .htree{
+	padding:10px 0px 40px 10px;
+}
+
+/*管理菜单*/
+.leftManageMenuTit{
+	height:29px;
+	background:url(/Public/images_Comba/leftManageMenuTit.png) top repeat-x;
+	}
+.leftManageMenuTit div{
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+	padding-top:5px;
+	color: #C9F5F6;	
+	}
+
+/*=====footer=====*/
+#main_footer {
+	height: 21px;
+	width: 100%;
+	display: block;
+	vertical-align: top;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;/* IE7、遨游 */
+	bottom: 0px;
+	_bottom: 7px;
+	background: url(/Public/images_Comba/footerBg.gif) repeat-x;
+}
+.footer td{ color:#000000; font-family:Arial,"宋体";}
+
+#progress{ text-align:center; margin-top:0px; position:absolute; left:0px; top:0px; width:100%; height:100%; background-color:transparent; z-index:98;display:none; }
+#progress p{font-size:18px; font-weight:bold; text-align:center;}
+#progress img{position: relative; padding-top: 7%;}
+#progress .events_init{position: absolute;left:40%;}
+#progress .events_init tr {margin: 5px 0px 5px 0px;}
+#progress table .events_init td {margin: 0px 5px 0px 5px;}
+#progress .events_init .OK td {color: green;}
+#progress .events_init .doing td {color: black;}
+
+#main_center {
+	background: #FFFFFF;
+	overflow: hidden;
+	_position: absolute;
+	_top: -9px;
+}
+#main_left {
+	width: 160px;
+	float: left;
+	background: url(/Public/images_Comba/treeBox_bg.gif) repeat-y;
+}
+
+#main_right {
+
+	float: left;
+}
+#contentContainer {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	background: #ffffff url(/Public/images_Comba/contentContainerBg.gif) repeat-x;
+	vertical-align: middle;
+}
+/* ISO 平台处理iframe无法滚动的样式 */
+.IOSContentContainer{-webkit-overflow-scrolling:touch;overflow: auto;}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF;
+	overflow: auto;
+}
+html {
+	margin: 0px;
+	padding: 0px;
+	overflow: visible;
+}
+
+#westAccordion a {
+	color: #000000;
+}
+#westAccordion td, #logout {
+	color: black;
+}
+#logout:hover {
+	color: rgb(198, 42, 42);
+}
+.dialog_h_resize {
+	/* model对话框水平调整 */
+	cursor: e-resize;
+}
+.dialog_v_resize {
+	/* model对话框垂直调整 */
+	cursor: n-resize;
+}
+.dialog_move {
+	/* model对话框拖动 */
+	cursor: move;
+}
+#imgUser {
+	background: url(/Public/images_Comba/icon_user.png) no-repeat;
+}
+#imgLogout {
+	background: url(/Public/images_Comba/icon_logout.png) no-repeat;
+}
+.treeIcon {
+	position:relative;
+	top:0px;
+	padding: 0px 8px 0px 0px;
+}
+.treeIconRoot {
+	background: url(/Public/images_Comba/empty.gif) no-repeat;
+}
+.treeIconFolder {
+	background: url(/Public/images_Comba/tree_close.gif) no-repeat;
+}
+.treeIconFolderOpen {
+	background: url(/Public/images_Comba/tree_open.gif) no-repeat;
+}
+.treeIconNode {
+	background: url(/Public/images_Comba/treeIcon_normal.gif) no-repeat;
+}
+.treeIconEmpty {
+	padding-right: 5px;
+}
+.treeIconFocus {
+	background: url(/Public/images_Comba/treeIcon_focus.gif) no-repeat;
+}
+.treeIconHover {
+	background: url(/Public/images_Comba/treeIcon_hover.gif) no-repeat;
+}
+.bgClosedFond {
+	padding: 5px 3px 5px 0px;
+	width: 100%;
+	cursor: pointer;
+	font-weight: bold;
+	color: #C9F5F6;
+}
+.bgOpenedFond {
+	padding: 5px 3px 5px 0px;
+	width: 100%;
+	cursor: pointer;
+	font-weight: bold;
+	color: #C9F5F6;
+}
+
+.treeTd{
+	padding: 4px 0px 4px 0px;
+}
+.treeLeaf{
+	color: #C9F5F6;
+	font-weight: normal;
+	text-decoration: none;
+}
+.treeLeaf:hover{
+	color: #c62a2a;
+	cursor: pointer;
+}
+.selectedTreeLeaf{
+	color: #c62a2a;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+}

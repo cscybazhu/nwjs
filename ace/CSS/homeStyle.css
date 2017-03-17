@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+body.mobile {
+	font-size: 16px;
+}
+
+body {
+	background: #fff;
+}
+
+.fontEnglish {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.fontChinese {
+	font-family: "宋体";
+}
+
+#homeTopTD {
+	background: #85b8ed;
+}
+.centerBg {
+	background: #fff url(/Public/images_Comba/login/login_centerBg.png) left top repeat-x;
+}
+td, input {
+	color: #fff;
+}
+input {
+	color: #000;
+}
+img {
+	border: 0;
+}
+.login_logo {
+	background: url(/Public/images_Comba/login/login_logo.jpg) no-repeat;
+	width: 540px;
+	height: 74px;
+}
+.login_logo_en {
+	background: url(/Public/images_Comba/login/login_logo.jpg) no-repeat;
+	width: 540px;
+	height: 74px;
+}
+
+#login_formLeft {
+	background: url(/Public/images_Comba/login/login_formLeft.jpg) no-repeat;
+	width: 202px;
+	height: 88px;
+}
+#login_formRight {
+	background: url(/Public/images_Comba/login/login_formRight.jpg) no-repeat;
+	width: 235px;
+	height: 88px;
+}
+.loginForm {
+	background: url(/Public/images_Comba/login/login_formBg.jpg) left top no-repeat;
+	height: 156px;
+}
+.formTable {
+	width: 80%;
+}
+.loginBtn {
+	background: url(/Public/images_Comba/login/login_Btn.jpg) no-repeat;
+	width: 103px;
+	height: 88px;
+	cursor: pointer;
+}
+.loginBtnHover {
+	background: url(/Public/images_Comba/login/login_BtnHover.jpg) no-repeat;
+	width: 103px;
+	height: 88px;
+	cursor: pointer;
+}
+
+.loginBtnEn {
+	background: url(/Public/images_Comba/login/login_Btn_en.png) no-repeat;
+	width: 103px;
+	height: 88px;
+	cursor: pointer;
+}
+.loginBtnEnHover {
+	background: url(/Public/images_Comba/login/login_BtnHover_en.jpg) no-repeat;
+	width: 103px;
+	height: 88px;
+	cursor: pointer;
+}
+
+input {
+	background: url(/Public/images_Comba/login/login_inputSprite.png) no-repeat;
+	height: 19px;
+	line-height: 19px;
+	padding-left: 18px;
+	border: 1px solid #336db0;
+	width: 170px;
+}
+input.userInput {
+	background-position: left top;
+}
+input.passwordInput {
+	background-position: left -25px;
+}
+.loginCopyright {
+	background: url(/Public/images_Comba/login/login_copyrightBg.jpg) left top no-repeat;
+	height: 37px;
+}
+.loginCopyright td {
+	color: #5f7893;
+}
+.loginCopyright span {
+	font-family: Tahoma;
+}
+
+#JesonLoginTR {
+	display: none;
+}
+#languageSelectTD {
+	width: 540px;
+}
+#languageSelectTD a {
+	float: right;
+	font-size: 24px;
+	font-weight: bolder;
+	color: #C9F5F6;
+	text-decoration: none;
+}
+#languageSelectTD a:hover {
+	color: #c62a2a;
+}

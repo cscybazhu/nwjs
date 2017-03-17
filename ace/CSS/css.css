@@ -1,0 +1,692 @@
+@charset "utf-8";
+/*=====reset=====*/
+form {
+	margin: 0;
+}
+.fontEnglish {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.fontChinese {
+	font-family: "宋体";
+}
+input {
+	margin: 0;
+}
+img {
+	border: 0;
+}
+ul, li, dl, dt, dd {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a {
+	color: #229be0;
+	text-decoration: none;
+}
+a:hover {
+	color: #ff6000;
+}
+
+/*======*/
+.inputText {
+	width: 150px;
+}
+.select {
+	width: 155px;
+}
+a.noDecoration {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.optionBottom {
+	text-align: center;
+}
+
+.optionBottom table tr td {
+	text-align: left;
+}
+.optionBottom input, optionBottom a {
+	position: relative;
+	left: -120px;
+}
+
+/*td经过样式=*/
+.tdHover {
+	background: url(/Public/images_Comba/gridSprite.gif) left -120px repeat-x;
+	border-bottom-color: #dddddd;
+}
+
+label input {
+	margin-right: 3px;
+}
+
+/*===tips help success error===*/
+
+.text_red12 {
+	color: #f00;
+}
+.text_69gray12 {
+	color: rgb(0%,70%,10%);
+}
+
+.help, .success, .error, .short_tips {
+	padding-left: 20px;
+}
+.help, .success {
+	color: rgb(0%,70%,10%);
+}
+.error {
+	color: rgb(70%,0%,10%);
+}
+.short_tips {
+	text-align: left;
+	margin-left: 40px;
+}
+
+.tips {
+	word-wrap: break-word;
+	width: 33%;
+	display: inline;
+	float: left;
+	overflow: auto;
+	padding-left: 10px;
+	padding-top: 30px;
+}
+.tips label {
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	display: block;
+}
+.tips label.current, .short_tips label.current {
+	font-weight: bolder;
+	color: rgb(0%,70%,10%);
+}
+.tipsHide, .hide {
+	display: none !important;
+}
+
+/*====按钮工具栏 ====*/
+a.public_btn {
+	background: url(/Public/images_Comba/btn_public_a.png) no-repeat scroll right top transparent;
+	color: #003365;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 21px;
+	margin-right: 4px;
+	padding-right: 8px;
+	text-decoration: none;
+}
+a.public_btn:hover {
+	background-position: right bottom;
+	color: #000000;
+	outline: medium none;
+	text-decoration: none;
+}
+a.public_btn span {
+	background: url(/Public/images_Comba/btn_public_span.png) no-repeat scroll 0 0 transparent;
+	display: block;
+	line-height: 15px;
+	padding: 4px 0 2px 8px;
+}
+a.public_btn:hover span {
+	background-position: left bottom;
+	padding: 4px 0 2px 8px;
+	text-decoration: none;
+}
+input.mac_btn {
+	color: #003365;
+	cursor: pointer;
+	height: 19px;
+	line-height: 19px;
+	text-decoration: none;
+	text-align: center;
+	width: 85px;
+	border: 0;
+}
+input.mac_btn:hover {
+	color: #000000;
+	outline: medium none;
+	text-decoration: none;
+}
+
+/*======guide======*/
+body.guideBody, body.configBody {
+}
+div.guideBox {
+	padding: 0;
+}
+.guideBox .guideTable {
+	margin: 12px 0px 0px 25px;
+	height: 265px;
+	width: 94%;
+}
+
+.guideBox th {
+	color: #2b66ac;
+	font-size: 16px;
+	text-align: left;
+}
+.guideBox td {
+	line-height: 20px;
+}
+.guideBox .paramName {
+	font-weight: bolder;
+	text-align: right;
+}
+.guideBox .B {
+	font-weight: bolder;
+}
+.guideBox em {
+	color: #e41751;
+	font-style: normal;
+}
+.guidBoxFail {
+	background: url(/Public/images_Comba/dialog/guide_fail.png) 92% 53% no-repeat;
+}
+.guidBoxFail th {
+	color: #e41751;
+}
+.guidBoxSucceed {
+	background: url(/Public/images_Comba/dialog/guide_succeed.png) 92% 53% no-repeat;
+}
+.guidBoxSucceed th {
+	color: #2bb600;
+}
+/*参数自动化配置*/
+.configBox {
+	width: 95%;
+	height: 95%;
+	overflow: auto;
+}
+.configBox .configTable {
+	position: relative;
+	left: 3%;
+	margin: 12px 0px;
+}
+.configBox td {
+	font-weight: bold;
+}
+.configBox a {
+	color: #4286bb;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.text_blue16b {
+	color: #4e89ba;
+	font-size: 16px !important;
+}
+.text_red16b {
+	color: #c51010;
+	font-size: 16px !important;
+}
+.text_gray13 {
+	color: #555555;
+}
+.text_green, .text_green td {
+	color: #347a00;
+}
+.text_red, .text_red td {
+	color: #c51010;
+}
+.text_black14 {
+	font-weight: normal !important;
+}
+/*操作提示框底部*/
+div.bottomBtn {
+	background: url(/Public/images_Comba/dialog/bottomBtnBarBg.png) left bottom repeat-x;
+	padding-right: 35px;
+	height: 39px;
+	*width: 631px;
+	_width: 635px;
+}
+div.bottomBtn_alert {
+	/* 屏蔽  div.bottomBtn */
+	*width: 450px;
+	_width: 450px;
+}
+div.bottomBtn input {
+	margin-top: 7px;
+	float: right;
+}
+/*=================参数网格=================*/
+body {
+	margin: auto;
+	width: 77%;
+	min-width: 760px;
+	max-width: 860px;
+	*width: 820px;
+	_width: 820px;
+	color: #000000;
+	font-size: 12px;
+}
+body.mobile {
+	font-size: 15px;
+}
+body.mobile input {
+	height: 20px;
+	font-size: 18px;
+}
+body.mobile select {
+	height: 25px;
+}
+/* 右侧显示帮助时 */
+.bodyHelpOn {
+	width: 100%;
+	min-width: 900px;
+	max-width: 1000px;
+	*width: 920px;
+	_width: 920px;
+}
+/*==参数网格外部容器==*/
+.mainContainer {
+	width: 99%;
+	margin-top: 20px;
+	float: left;
+}
+/* 右侧显示帮助时 */
+.mainContainerHelpOn {
+	width: 60% !important;
+}
+
+.mainContainer .innerBox {
+	width: 100% -10px;
+	margin: 7px;
+	margin-top: 0;
+	height: auto;
+	background: #ffffff;
+	border: 1px solid #93bfee;
+	-moz-box-shadow: 1px 1px 1px #cfcfcf;
+	-webkit-box-shadow: 2px 1px 2px #cfcfcf;
+	box-shadow: 1px 1px 1px #cfcfcf;
+	word-break: keep-all;
+	overflow: hidden;
+	clear: both;
+}
+
+.mainDiv {
+	width: 98%;
+	padding: 10px;
+}
+.mainDiv table {
+	margin-bottom: 11px;
+	width: 100%;
+}
+.mainDiv table caption {
+	text-align: left;
+	border-bottom: 1px solid #acbed0;
+	color: #2b66ac;
+	font-weight: bold;
+	background: url(/Public/images_Comba/arrowRight.gif) 7px center no-repeat;
+	height: 26px;
+	padding: 5px 0 0 18px;
+	margin-bottom: 6px;
+	height: 22px\9;
+	padding-top: 12px\9;
+}
+.mainDiv table th {
+	/*	text-align:right;	*/
+}
+.mainDiv table td {
+	height: 26px;
+	line-height: 26px;
+}
+
+/*==========网格tab栏==========*/
+.tabBar {
+	background: url(/Public/images_Comba/tabBg_sprite.png) left top repeat-x;
+	width: 100%;
+	height: 27px;
+}
+.tabBar .tabTd {
+	padding: 3px 0 0 6px;
+	word-break: keep-all;
+	overflow: hidden;
+}
+/*=tab默认状态=*/
+.tabBar .tabTd div {
+	float: left;
+	background: url(/Public/images_Comba/tabBg_sprite.png) left -27px repeat-x;
+	border-left: 1px solid #93bfee;
+	border-right: 1px solid #93bfee;
+	color: #2c67ad;
+	height: 18px;
+	margin-right: 3px;
+	padding: 6px 6px 0 6px;
+	height: 17px\9;
+	padding: 7px 6px 0 6px\9;
+	cursor: default;
+}
+/*=tab选中状态=*/
+.tabBar .tabTd div.selected {
+	background: url(/Public/images_Comba/tabBg_sprite.png) left -51px repeat-x;
+	font-weight: bold;
+}
+/*=tab鼠标经过状态=*/
+.tabBar .tabTd div.hover {
+	background: url(/Public/images_Comba/tabBg_sprite.png) left -75px repeat-x;
+}
+
+/*===tab栏右侧控制按钮===*/
+.tabBar .tabControl a {
+	display: block;
+	float: left;
+	width: 18px;
+	height: 21px;
+}
+/*=向左=*/
+.tabBar .tabControl a.gotoL:link {
+	background: url(/Public/images_Comba/tabControl_sprite.png) left top no-repeat;
+}
+.tabBar .tabControl a.gotoL:visited {
+	background: url(/Public/images_Comba/tabControl_sprite.png) left top no-repeat;
+}
+.tabBar .tabControl a.gotoL:hover {
+	background: url(/Public/images_Comba/tabControl_sprite.png) left -21px no-repeat;
+}
+.tabBar .tabControl a.gotoL:active {
+	background: url(/Public/images_Comba/tabControl_sprite.png) left -42px no-repeat;
+}
+.tabBar .tabControl a.gotoL_disable {
+	background: url(/Public/images_Comba/tabControl_sprite.png) left -63px no-repeat;
+	cursor: default;
+}
+/*=向右=*/
+.tabBar .tabControl a.gotoR:link {
+	background: url(/Public/images_Comba/tabControl_sprite.png) -18px top no-repeat;
+}
+.tabBar .tabControl a.gotoR:visited {
+	background: url(/Public/images_Comba/tabControl_sprite.png) -18px top no-repeat;
+}
+.tabBar .tabControl a.gotoR:hover {
+	background: url(/Public/images_Comba/tabControl_sprite.png) -18px -21px no-repeat;
+}
+.tabBar .tabControl a.gotoR:active {
+	background: url(/Public/images_Comba/tabControl_sprite.png) -18px -42px no-repeat;
+}
+.tabBar .tabControl a.gotoR_disable {
+	background: url(/Public/images_Comba/tabControl_sprite.png) -18px -63px no-repeat;
+	cursor: default;
+}
+/*=向下=*/
+.tabBar .tabControl a.gotoD:link {
+	width: 19px;
+	background: url(/Public/images_Comba/tabControl_sprite.png) -36px top no-repeat;
+}
+.tabBar .tabControl a.gotoD:visited {
+	width: 19px;
+	background: url(/Public/images_Comba/tabControl_sprite.png) -36px top no-repeat;
+}
+.tabBar .tabControl a.gotoD:hover {
+	background: url(/Public/images_Comba/tabControl_sprite.png) -36px -21px no-repeat;
+}
+.tabBar .tabControl a.gotoD:active {
+	background: url(/Public/images_Comba/tabControl_sprite.png) -36px -42px no-repeat;
+}
+.tabBar .tabControl a.gotoD_disable {
+	width: 19px;
+	background: url(/Public/images_Comba/tabControl_sprite.png) -36px -63px no-repeat;
+	cursor: default;
+}
+/*=刷新=*/
+.tabBar a.icon_refurbish {
+	cursor: pointer;
+	float: right;
+	padding: 8px 10px 8px 18px;
+	margin-right: 10px;
+	background: url(/Public/images_Comba/iconSprite.png) no-repeat;
+	background-position: left -113px;
+	display: block;
+}
+/*=标题=*/
+.tabBar a.icon_title {
+	float: left;
+	padding: 8px 10px 0 5px;
+	margin-right: 10px;
+	color: #000000;
+	font-weight: bold;
+}
+/*==========参数网格==========*/
+.parameterGridBox {
+	width: 100% -20px;
+	padding: 10px;
+}
+.parameterGrid {
+	width: 100%;
+	border: 1px solid #b7c8da;
+	background: #fff;
+}
+div.infoTitle {
+	text-align: left;
+	border-bottom: 1px solid #acbed0;
+	color: #2b66ac;
+	font-weight: bold;
+	background: url(/Public/images_Comba/arrowRight.gif) 7px center no-repeat;
+	height: 22px;
+	padding: 8px 0 0 18px;
+	margin-bottom: 6px;
+	height: 22px\9;
+	padding-top: 12px\9;
+}
+div.infoTitle a {
+	color: #2b66ac;
+}
+div.infoTitle label {
+	position: relative;
+	bottom: -5px;
+	*bottom: 10px; /*IE7*/
+	_bottom: 0px; /* IE6 */
+}
+.parameterGrid table {
+	table-layout: fixed !important;
+}
+/*网格标题头*/
+.parameterGrid th, .parameterGrid td {
+	padding-left: 3px;
+	text-align: left;
+	overflow: hidden;
+}
+.parameterGrid th {
+	background: url(/Public/images_Comba/gridSprite.gif) top repeat-x;
+	border-top: 1px solid #f9f9f9;
+	border-bottom: 1px solid #d0d0d0;
+	border-right: 1px solid #d0d0d0;
+	height: 23px;
+	line-height: 23px;
+}
+.parameterGrid th div {
+	float: right;
+	width: 3px;
+	height: 19px;
+	cursor: col-resize;
+	white-space: nowrap;
+	font-size: 1px;
+	line-height: 20px;
+}
+.parameterGrid th div.clear {
+	clear: both;
+	font-size: 0;
+	height: 0px;
+	line-height: 0;
+	display: block;
+	width: 100%;
+	overflow: hidden;
+}
+.parameterGrid th.firstCell {
+	border-left: 0;
+}
+.parameterGrid th.lastCell {
+	border-right: 0;
+}
+/*td默认样式*/
+.parameterGrid td {
+	height: 22px;
+	line-height: 22px;
+	border: 1px 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ededed;
+}
+.parameterGrid td div {
+	overflow: hidden;
+}
+
+.parameterGrid th.left, .parameterGrid td.left {
+	width: 200px;
+	font-weight: bolder;
+	text-align: right;
+}
+
+.parameterGrid td.mulRadio {
+	padding-left: 100px;
+	font-weight: bolder;
+}
+.parameterGrid td.mulRadio label {
+	padding-right: 10px;
+}
+.parameterGrid td.help {
+	text-align: center;
+}
+.parameterGrid td.leftAlignLeft {
+	padding-left: 50px;
+	width: 150px;
+	text-align: left;
+	font-weight: bolder;
+}
+/*odd*/
+.parameterGrid tr.odd td {
+	background: #fff;
+}
+/*even*/
+.parameterGrid tr.even td {
+	background: #fafafa;
+}
+/*td选中样式=*/
+.parameterGrid tr.selectedTd td {
+	background: url(/Public/images_Comba/gridSprite.gif) left -30px repeat-x;
+	border-bottom-color: #dddddd;
+}
+/*td经过样式=*/
+.parameterGrid tr.hoverTd td {
+	background: url(/Public/images_Comba/gridSprite.gif) left -120px repeat-x;
+	border-bottom-color: #dddddd;
+}
+
+/*====公用样式=====*/
+.fLeft {
+	float: left;
+}
+.fRight {
+	float: right;
+}
+.mRight_5 {
+	margin-right: 5px;
+}
+
+.delectSelected {
+	margin-left: 20px;
+	cursor: pointer;
+	color: rgb(0%,50%,80%);
+}
+.delectSelected:active, .delectSelected:hover {
+	color: rgb(0%,0%,0%);
+}
+.delectSelected:after {
+	color: rgb(0%,20%,30%);
+}
+
+/*================Add 2013-5-13 新按钮样式=============*/
+.btnBar {
+	overflow: hidden;
+	padding-left: 214px;
+	padding-bottom: 10px;
+}
+
+/*浅色按钮*/
+a.btn1 {
+	margin: 0 2px;
+	float: left;
+	line-height: 20px;
+	line-height: 19px\9;
+	text-decoration: none;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#ebf7ff), to(#96d6ff));
+	background: -moz-linear-gradient(top, #ebf7ff,#96d6ff);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ebf7ff,endColorstr=#96d6ff,grandientType=1);
+	border: solid 1px #4e9fd2;
+	color: #092c56;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+a.btn1 span {
+	display: inline-block;
+	padding: 0 15px;
+	border: solid 1px #dfecf5;
+	cursor: pointer;
+	padding-top: 2px\9;
+}
+
+a.btn1:hover {
+	text-decoration: none;
+	color: red;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f0fcff), to(#8be8ff));
+	background: -moz-linear-gradient(top, #f0fcff,#8be8ff);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f0fcff,endColorstr=#8be8ff,grandientType=1);
+	border: solid 1px #4e9fd2;
+}
+
+a.btn1:hover span {
+	border: solid 1px #e2f4ff;
+}
+
+a.btn1:active {
+	text-decoration: none;
+	color: red;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#96d6ff), to(#ebf7ff));
+	background: -moz-linear-gradient(top, #96d6ff,#ebf7ff);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#96d6ff,endColorstr=#ebf7ff,grandientType=1);
+	border: solid 1px #4e9fd2;
+}
+
+a.btn1:active span {
+	border: solid 1px #80c6fd;
+}
+
+/*按钮不可用状态*/
+a.btnDisable, a.btnDisable:hover, a.btnDisable:active {
+	margin: 0 2px;
+	float: left;
+	line-height: 20px;
+	line-height: 19px\9;
+	text-decoration: none;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f3f3f3), to(#ededed));
+	background: -moz-linear-gradient(top, #f3f3f3,#ededed);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f3f3f3,endColorstr=#ededed,grandientType=1);
+	border: solid 1px #c5c5c5;
+	color: #9d9d9d;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	cursor: default;
+}
+a.btnDisable span, a.tnDisable:hover span, a.tnDisable:active span {
+	display: inline-block;
+	padding: 0 15px;
+	border: solid 1px #f9fdfe;
+	cursor: default;
+	padding-top: 2px\9;
+}
+
+.textInput {
+	background: url(/Public/images_Comba/textInputBg.gif) top repeat-x;
+	border: 1px solid #7eadd9;
+	height: 18px;
+	line-height: 18px;
+	padding-left: 3px;
+	width: 180px;
+}
+.textInputSelect {
+	width: 185px;
+}
